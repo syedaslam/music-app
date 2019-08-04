@@ -17,26 +17,17 @@ body{
 }
 
 .sidenav {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 60px;
     background-color: #10111e;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 60px;
-    background-color: #1d1e32;
-}
-
-.sidenav-items {
-    height: 100px;
-    width: 100%;
-}
-
 .logo {
     height: 60px;
+    width: 60px;
+    background: white;
 }
 
 .logo-image {
@@ -47,11 +38,28 @@ body{
 }
 
 
+.sidenav-items {
+    height: 100px;
+    width: 100%;
+}
+
+/* ------------------------ */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    background-color: #1d1e32;
+
+}
 
 .navbar-tabs {
     min-width: 200px;
     color: white;
+    text-align: center;
     letter-spacing: 2px;
+
 }
 
 .selected  {
