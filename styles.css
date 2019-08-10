@@ -13,18 +13,18 @@ body{
     display: flex;
     height: 100%;
     width: 100%;
-    justify-content: center;
 }
 
 .sidenav {
-    display: flex;
-    flex-direction: column;
     height: 100%;
     width: 60px;
     background-color: #10111e;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 60px;
     width: 60px;
     background: white;
@@ -38,6 +38,10 @@ body{
 }
 
 
+.div-sidenav-items{
+    display: flex;
+    flex-direction: column;
+}
 .sidenav-items {
     height: 60px;   
     width: 100%;
@@ -57,17 +61,18 @@ body{
 }
 /* ------------------------ */
 .navbar {
+    overflow: hidden;
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
+    width:calc(100%-60px);
     height: 60px;
     background-color: #1d1e32;
-
 }
 
 .navbar-tabs {
     width: 200px;
     color: white;
+    font-size: 0.5em;
     letter-spacing: 2px;
     height: 100%;
     display: flex;
@@ -75,6 +80,6 @@ body{
     justify-content: center;
 }
 
-.selected  {
+.navbar-tabs:hover  {
     border-bottom: 4px solid red;
 } 
